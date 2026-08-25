@@ -56,6 +56,8 @@ OSPTEK **4.3 寸 480×800 TFT** 是一款 **MIPI DSI** 接口彩色显示模组�
 | ESP32-P4 · 防撕裂 LVGL 演示 | [`examples/with-te/p4-idf_st7102-mipi_lvgl-common-demo/`](./examples/with-te/p4-idf_st7102-mipi_lvgl-common-demo/) |
 | ESP32-P4 · ST7102 MIPI + SC2336 摄像头预览 | [`examples/camera/esp32p4-idf5_st7102-mipi-dsi_sc2336-mipi-csi_video-lcd-display/`](./examples/camera/esp32p4-idf5_st7102-mipi-dsi_sc2336-mipi-csi_video-lcd-display/) |
 | Linux · RK3566 设备树 + ST7123 触摸参考 | [`examples/linux/`](./examples/linux/) |
+| Raspberry Pi 5 · ST7102 480×800 面板驱动 / DT overlay（仅显示） | [`examples/rpi5-panel-st7102-480x800/`](./examples/rpi5-panel-st7102-480x800/) |
+| Raspberry Pi 5 · ST7102 显示 + ST7123 触摸 / DT overlay | [`examples/rpi5-panel-st7102-st7123-480x800/`](./examples/rpi5-panel-st7102-st7123-480x800/) |
 
 ## 仓库结构
 
@@ -90,6 +92,8 @@ OSPTEK **4.3 寸 480×800 TFT** 是一款 **MIPI DSI** 接口彩色显示模组�
 - [ESP32-P4 防撕裂 LVGL 演示](./examples/with-te/p4-idf_st7102-mipi_lvgl-common-demo/)
 - [ESP32-P4 ST7102 MIPI + SC2336 摄像头预览](./examples/camera/esp32p4-idf5_st7102-mipi-dsi_sc2336-mipi-csi_video-lcd-display/)
 - [Linux RK3566 + ST7123 参考](./examples/linux/)
+- [Raspberry Pi 5 ST7102 面板（仅显示）](./examples/rpi5-panel-st7102-480x800/)
+- [Raspberry Pi 5 ST7102 显示 + ST7123 触摸](./examples/rpi5-panel-st7102-st7123-480x800/)
 
 ## 购买链接
 

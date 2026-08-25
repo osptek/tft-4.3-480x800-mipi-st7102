@@ -56,6 +56,8 @@ Current module version: **YDP430BT009-V1**. Electrical and mechanical details fo
 | ESP32-P4 · tear-related LVGL demo | [`examples/with-te/p4-idf_st7102-mipi_lvgl-common-demo/`](./examples/with-te/p4-idf_st7102-mipi_lvgl-common-demo/) |
 | ESP32-P4 · ST7102 MIPI + SC2336 camera preview | [`examples/camera/esp32p4-idf5_st7102-mipi-dsi_sc2336-mipi-csi_video-lcd-display/`](./examples/camera/esp32p4-idf5_st7102-mipi-dsi_sc2336-mipi-csi_video-lcd-display/) |
 | Linux · RK3566 device tree + ST7123 touch reference | [`examples/linux/`](./examples/linux/) |
+| Raspberry Pi 5 · ST7102 480×800 panel / DT overlay (display only) | [`examples/rpi5-panel-st7102-480x800/`](./examples/rpi5-panel-st7102-480x800/) |
+| Raspberry Pi 5 · ST7102 display + ST7123 touch / DT overlay | [`examples/rpi5-panel-st7102-st7123-480x800/`](./examples/rpi5-panel-st7102-st7123-480x800/) |
 
 ## Repository layout
 
@@ -90,6 +92,8 @@ Current module version: **YDP430BT009-V1**. Electrical and mechanical details fo
 - [ESP32-P4 tear-related LVGL demo](./examples/with-te/p4-idf_st7102-mipi_lvgl-common-demo/)
 - [ESP32-P4 ST7102 MIPI + SC2336 camera preview](./examples/camera/esp32p4-idf5_st7102-mipi-dsi_sc2336-mipi-csi_video-lcd-display/)
 - [Linux RK3566 + ST7123 reference](./examples/linux/)
+- [Raspberry Pi 5 ST7102 panel (display only)](./examples/rpi5-panel-st7102-480x800/)
+- [Raspberry Pi 5 ST7102 display + ST7123 touch](./examples/rpi5-panel-st7102-st7123-480x800/)
 
 ## Buy
 

@@ -1,77 +1,56 @@
+# Raspberry Pi 5 · ST7102 480×800（仅显示）
+
+本目录为 **YDP430BT009-V1** 在 Raspberry Pi 5 上的 **仅显示** 内核模块与 DT overlay 示例（无触摸）。
+
+本目录文件：
+
+| 文件 | 说明 |
+| ---- | ---- |
+| `panel-st7102-480x800.c` | ST7102 DRM panel 驱动 |
+| `Makefile` | 内核模块编译 |
+| `vc4-kms-dsi-st7102-480x800.dts` | DSI overlay |
+
+---
+
 # 1. 准备工作
 
-```
-# 更新软件包列表
+```bash
 sudo apt update
-
-# 安装编译工具链与匹配的内核头文件
-sudo apt install build-essential linux-headers-$(uname -r)
-
-# 创建文件夹并进入
-mkdir st7102-480x800 && cd st7102-480x800
+sudo apt install build-essential linux-headers-$(uname -r) device-tree-compiler
 ```
 
-# 2. 驱动源码（panel-st7102-480x800.c）
+将本目录拷到树莓派后进入该目录（以下命令默认在本目录执行）。
 
-```
-sudo nano panel-st7102-480x800.c
-```
+# 2. 编译内核模块
 
-
-
-# 3. Makefile
-
-```
-sudo nano Makefile
-```
-
-
-
-```
-obj-m += panel-st7102-480x800.o
-
-all:
-	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) modules
-
-clean:
-	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) clean
-```
-
-> 编译：
-
-```
+```bash
 make clean
 make
 ```
 
-# 4. 设备树 Overlay（vc4-kms-dsi-st7102-480x800.dts）
+# 3. 编译并安装 Overlay / 模块
 
-```
-sudo nano vc4-kms-dsi-st7102-480x800.dts
-```
-
-
-
-> 编译并安装：
-
-```
+```bash
 dtc -@ -I dts -O dtb -o vc4-kms-dsi-st7102-480x800.dtbo vc4-kms-dsi-st7102-480x800.dts
 sudo cp vc4-kms-dsi-st7102-480x800.dtbo /boot/firmware/overlays/
+sudo mkdir -p /lib/modules/$(uname -r)/kernel/drivers/gpu/drm/panel/
 sudo cp panel-st7102-480x800.ko /lib/modules/$(uname -r)/kernel/drivers/gpu/drm/panel/
 sudo depmod -a
 ```
 
-# 5. 启用
+> Overlay 必须使用 `dtc -@`，否则符号修复可能失败，DTO 无法正确加载。
 
-> 编辑 /boot/firmware/config.txt，添加：
+# 4. 启用
 
+编辑 `/boot/firmware/config.txt`：
+
+```bash
+sudo nano /boot/firmware/config.txt
 ```
-sudo nano  /boot/firmware/config.txt
-```
 
+添加（或确认）如下配置：
 
-
-```
+```text
 # 关闭自动检测，避免和手动 overlay 冲突
 display_auto_detect=0
 
@@ -83,9 +62,8 @@ dtoverlay=vc4-kms-dsi-st7102-480x800
 ignore_lcd=1
 ```
 
-> 重启：
+重启：
 
-```
+```bash
 sudo reboot
 ```
-

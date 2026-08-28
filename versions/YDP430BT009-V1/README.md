@@ -58,6 +58,7 @@ OSPTEK **4.3 寸 480×800 TFT** 是一款 **MIPI DSI** 接口彩色显示模组�
 | Linux · RK3566 设备树 + ST7123 触摸参考 | [`examples/linux/`](./examples/linux/) |
 | Raspberry Pi 5 · ST7102 480×800 面板驱动 / DT overlay（仅显示） | [`examples/rpi5-panel-st7102-480x800/`](./examples/rpi5-panel-st7102-480x800/) |
 | Raspberry Pi 5 · ST7102 显示 + ST7123 触摸 / DT overlay | [`examples/rpi5-panel-st7102-st7123-480x800/`](./examples/rpi5-panel-st7102-st7123-480x800/) |
+| Raspberry Pi 5 · ST7102 + ST7123 · LVGL（DRM + EVDEV） | [`examples/rpi5-lvgl-st7102-st7123-480x800/`](./examples/rpi5-lvgl-st7102-st7123-480x800/) |
 
 ## 仓库结构
 
@@ -94,6 +95,7 @@ OSPTEK **4.3 寸 480×800 TFT** 是一款 **MIPI DSI** 接口彩色显示模组�
 - [Linux RK3566 + ST7123 参考](./examples/linux/)
 - [Raspberry Pi 5 ST7102 面板（仅显示）](./examples/rpi5-panel-st7102-480x800/)
 - [Raspberry Pi 5 ST7102 显示 + ST7123 触摸](./examples/rpi5-panel-st7102-st7123-480x800/)
+- [Raspberry Pi 5 ST7102 + ST7123 · LVGL](./examples/rpi5-lvgl-st7102-st7123-480x800/)
 
 ## 购买链接
 

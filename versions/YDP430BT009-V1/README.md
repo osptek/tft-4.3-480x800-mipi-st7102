@@ -81,7 +81,7 @@ OSPTEK **4.3 寸 480×800 TFT** 是一款 **MIPI DSI** 接口彩色显示模组�
 | ---- | ---- |
 | 产品规格书（YDP430BT009-V1） | [`docs/YDP_430_BT_009_V1_a418b8470b.pdf`](./docs/YDP_430_BT_009_V1_a418b8470b.pdf) |
 | 外形图（YDP430BT009-V1） | [`docs/YDP430BT009-V1_外形图.pdf`](./docs/YDP430BT009-V1_%E5%A4%96%E5%BD%A2%E5%9B%BE.pdf) |
-| CAD（YDP430B009-V1） | [`docs/YDP430B009-V1.dwg`](./docs/YDP430B009-V1.dwg) |
+| 3D 图纸（YDP430BT009-V1） | [`docs/YDP430BT009-V1.dwg`](./docs/YDP430BT009-V1.dwg) |
 | 驱动 IC 数据手册（ST7102） | [`docs/ST7102_Datasheet_V0.22.pdf`](./docs/ST7102_Datasheet_V0.22.pdf) |
 | 初始化序列（C） | [`docs/GX09C_ST7102+BOE4.3_2LANE_90HZ.c`](./docs/GX09C_ST7102+BOE4.3_2LANE_90HZ.c) |
 | 时序配置参考图（90 Hz） | [`docs/RGB_Output_Timing_90Hz.jpg`](./docs/RGB_Output_Timing_90Hz.jpg) |

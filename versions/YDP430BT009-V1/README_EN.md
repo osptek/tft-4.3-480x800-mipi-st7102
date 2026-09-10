@@ -82,6 +82,7 @@ Current module version: **YDP430BT009-V1**. Electrical and mechanical details fo
 | Product datasheet (YDP430BT009-V1) | [`docs/YDP_430_BT_009_V1_a418b8470b.pdf`](./docs/YDP_430_BT_009_V1_a418b8470b.pdf) |
 | Outline drawing (YDP430BT009-V1) | [`docs/YDP430BT009-V1_外形图.pdf`](./docs/YDP430BT009-V1_%E5%A4%96%E5%BD%A2%E5%9B%BE.pdf) |
 | 3D drawing (YDP430BT009-V1) | [`docs/YDP430BT009-V1.dwg`](./docs/YDP430BT009-V1.dwg) |
+| 3D model (STEP) | [`docs/YDP430BT009-V1.step`](./docs/YDP430BT009-V1.step) |
 | Driver IC datasheet (ST7102) | [`docs/ST7102_Datasheet_V0.22.pdf`](./docs/ST7102_Datasheet_V0.22.pdf) |
 | Init sequence (C) | [`docs/GX09C_ST7102+BOE4.3_2LANE_90HZ.c`](./docs/GX09C_ST7102+BOE4.3_2LANE_90HZ.c) |
 | Timing reference (90 Hz) | [`docs/RGB_Output_Timing_90Hz.jpg`](./docs/RGB_Output_Timing_90Hz.jpg) |

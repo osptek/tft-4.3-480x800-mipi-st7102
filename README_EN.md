@@ -29,7 +29,7 @@ This repository holds materials for the **4.3″ 480×800 TFT (MIPI · ST7102)**
 
 The **root README is the navigation page**. Use the table below for a quick scan; open **Full docs** to enter that **part-number folder** under `versions/` (product page, datasheets, and examples live there).
 
-Repo id: `4.3-tft-480x800-mipi-st7102`
+Repo id: `tft-4.3-480x800-mipi-st7102`
 
 ---
 

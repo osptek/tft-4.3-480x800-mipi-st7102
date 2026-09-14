@@ -31,7 +31,7 @@
 
 OSPTEK **4.3″ 480×800 TFT** is a **MIPI DSI** color display module driven by **ST7102**, with touch controller **ST7123**. It suits compact HMI, handheld terminals, and portrait info panels.
 
-Spec ID (repository name): `4.3-tft-480x800-mipi-st7102`
+Spec ID (repository name): `tft-4.3-480x800-mipi-st7102`
 
 Current module version: **YDP430BT009-V1**. Electrical and mechanical details follow [`docs/YDP_430_BT_009_V1_a418b8470b.pdf`](./docs/YDP_430_BT_009_V1_a418b8470b.pdf).
 
@@ -63,7 +63,7 @@ Current module version: **YDP430BT009-V1**. Electrical and mechanical details fo
 ## Repository layout
 
 ```text
-4.3-tft-480x800-mipi-st7102/                                # repo root (nav: ../../README_EN.md)
+tft-4.3-480x800-mipi-st7102/                                # repo root (nav: ../../README_EN.md)
 └── versions/
     └── YDP430BT009-V1/                                # full materials for this part number
         ├── README.md

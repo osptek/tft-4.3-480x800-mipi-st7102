@@ -6,6 +6,7 @@ panel: tft
 resolution: 480x800
 interface: [mipi]
 shape: rect
+corner: rounded
 
 versions:
   - id: YDP430BT009-V1

@@ -1,0 +1,14 @@
+id: tft-4.3-480x800-mipi-st7102
+category: displays
+
+size: "4.3"
+panel: tft
+resolution: 480x800
+interface: [mipi]
+shape: rect
+
+versions:
+  - id: YDP430BT009-V1
+    driver: ST7102
+    touch: ST7123
+    note: none
